@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div><h3>COLLINS</h3></div>
             <div>
                 <ul>
@@ -32,12 +32,12 @@
     </header>
     <main>
         <!-- hero section -->
-        <section>
+        <section class="section1">
             <div class="content">
                 <h1>Hi, I'm Collins</h1>
                 <h2>Frontend Developer</h2>
                 <p>One project at a time, building responsive and modern web experiences everyday.</p>
-                <div>
+                <div class="buttons">
                     <button class="button1">Let's connect</button>
                     <button class="button2"> See my work</button>
                 </div>
@@ -72,7 +72,7 @@
             </div>
         </section>
         <!-- about section -->
-        <section>
+        <section class="about-section">
             <div class="left-container">
                 <div>
                     <img src="image/Screenshot_20260804_235747_Photos.jpg" alt="">
@@ -115,7 +115,7 @@
                             <p>2021</p>
                             </div>
                             <div class="list3">
-                            <p>Graphic Designer/p>
+                            <p>Graphic Designer</p>
                             <p>SummitWorks</p>
                             <p>2024</p>
                             </div>
@@ -123,15 +123,17 @@
                     </div>
         </section>
         <!-- project section -->
-        <section class="block! space-y-10!">
+        <section class=" project-section block! space-y-10!">
 
             <div class="text-center">
                 <h2 class="flex justify-center text-3xl my-5! ">Projects</h2>
-                <p>A clear workflow drives each projects from strategy and <br>design to development and post-launch support.</p>
+                <p>
+                    A clear workflow drives each projects from strategy and
+                     <br class="hidden md:block">design to development and post-launch support.</p>
             </div>
 
             <div class="space-y-5!">
-                <div class="grid grid-cols-3 gap-5!">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5!">
                     <article class="w-full h-80 bg-red-500 rounded-3xl p-10! project-bg-1 overflow-hidden border-2 border-blue-500 rounded-3xl"></article>
                     <article class="w-full h-80 bg-red-500 rounded-3xl p-10! project-bg-2 overflow-hidden border-2 border-blue-500 rounded-3xl"></article>
                     <article class="w-full h-80 bg-red-500 rounded-3xl p-10! project-bg-3 overflow-hidden border-2 border-blue-500 rounded-3xl"></article>
@@ -139,7 +141,7 @@
                 </div>
                 <div class="flex justify-between p-5! bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl">
                     <p class="text-2xl">Build reliable, user-focused products with expert code.</p>
-                    <button class="w-30 h-10 bg-cyan-500 rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-white transition">Book a Call</button>
+                    <button class="w-40 h-12 bg-cyan-500 rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-white transition">Book a Call</button>
                 </div>
             </div>
         </section>
@@ -189,23 +191,23 @@
         </section>
          <!-- Vision Section -->
         <section>
-            <div class="w-full mx-auto bg-linear-90  from-blue-700 to-blue-950 rounded-lg h-100 p-10! overflow-hidden">
-                <div class="w-160 space-y-5! flex flex-col justify-center items-start h-full animate__animated animate__fadeInLeft">
+            <div class="w-full mx-auto bg-linear-90  from-blue-700 to-blue-950 rounded-lg h-auto md:h-100 p-10! overflow-hidden">
+                <div class="w-full md:w-160 space-y-5! flex flex-col justify-center items-start h-full animate__animated animate__fadeInLeft">
                 <h1 class="text-4xl font-bold">Your vision,my expertise. Let's create something <span class="text-blue-950">exceptional.</span></h1>
-                <p>Ready to start? Schedule a consultation and let's <br> shape your next big project</p>
+                <p>Ready to start? Schedule a consultation and let's <br class="hidden md:block"> shape your next big project</p>
                 <button class="px-10! py-3! bg-cyan-500 text-white font-semibold rounded-full border-2 border-white cursor-pointer">Book a call</button>
             </div>
             </div>
         </section>
     </main>
     
-    <footer class="p-10! bg-linear-180  from-black via-blue-700 to-blue-950 mt-20!">
+    <footer class="p-5! md:p-10! bg-linear-180  from-black via-blue-700 to-blue-950 mt-20!">
       <div class="text-center py-10!">
-        <h1 class="uppercase text-8xl font-bold">Collins</h1>
+        <h1 class="uppercase text-5xl md:text-8xl font-bold">Collins</h1>
       </div>
       <div class="flex flex-col justify-center items-center gap-10! py-10! border-t border-gray-100/20">
         <nav class="bg-transparent!">
-          <ul class="flex items-center gap-10!">
+          <ul class="flex flex-wrap justify-center items-center gap-5! md:gap-10!">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Work</a></li>
@@ -214,16 +216,16 @@
           </ul>
         </nav>
 
-        <div class="flex gap-12! text-3xl text-gray-300">
-          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-14 h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.linkedin.com/in/collins-onuoha-a4077434b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-14 h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.facebook.com/profile.php?id=61572519232435" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-14 h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.instagram.com/collins_5547/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-14 h-14 rounded-full p-1 flex items-center justify-center"><a href="https://github.com/Enenra5547" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <div class="flex flex-wrap justify-center gap-5! md:gap-12! text-3xl text-gray-300">
+          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-12 h-12 md:w-14 md:h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.linkedin.com/in/collins-onuoha-a4077434b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-12 h-12 md:w-14 md:h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.facebook.com/profile.php?id=61572519232435" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-12 h-12 md:w-14 md:h-14 rounded-full p-1 flex items-center justify-center"><a href="https://www.instagram.com/collins_5547/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="border-2 border-gray-300/30 hover:bg-blue-700 hover:text-white transition-all w-12 h-12 md:w-14 md:h-14 rounded-full p-1 flex items-center justify-center"><a href="https://github.com/Enenra5547" target="_blank"><i class="fa-brands fa-github"></i></a></li>
          
         </div>
       </div>
 
-      <div class="flex justify-between items-center mt-10! text-lg text-gray-100 ">
+      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4! mt-8! md:mt-10! text-sm md:text-lg text-gray-100 text-center ">
         <p>&copy; 2026 New horizons. All Rights Reserved</p>
         <p>Privacy | Terms of Service | Cookies | License</p>   
       </div>
