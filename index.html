@@ -9,26 +9,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div><h3>COLLINS</h3></div>
-            <div>
-                <ul>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">TESTIMONALS</a></li>
-                    <li><a href="#">FAQS</a></li>
-                </ul>
-            </div>
+<nav class="nav">
 
-            <div>
-                <button class="button0"><a href="#">Book a Call</a></button>
-            </div>
-        </nav>
+    <div>
+        <h3>COLLINS</h3>
+    </div>
+
+    <!-- Desktop navigation -->
+    <div class="nav-links">
+        <ul>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">FAQS</a></li>
+        </ul>
+    </div>
+
+    <!-- Desktop Book a Call -->
+    <div class="desktop-button">
+        <button class="button9">
+            <a href="#">Book a Call</a>
+        </button>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <div class="mobile-menu">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">PROJECTS</a>
+            <a href="#">SERVICES</a>
+            <a href="#">TESTIMONIALS</a>
+            <a href="#">FAQS</a>
+        </div>
+    </div>
+
+</nav>
     </header>
     <main>
         <!-- hero section -->
@@ -140,8 +161,8 @@
                     
                 </div>
                 <div class="flex justify-between p-5! bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl">
-                    <p class="text-2xl">Build reliable, user-focused products with expert code.</p>
-                    <button class="w-40 h-12 bg-cyan-500 rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-white transition">Book a Call</button>
+                    <p class="text-md md:text-2xl">Build reliable, user-focused products with expert code.</p>
+                    <button class=" last-button w-40 h-12 bg-cyan-500 rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-white transition">Book a Call</button>
                 </div>
             </div>
         </section>
@@ -149,40 +170,40 @@
         <section class="block! space-y-14!">
             <div class="text-center">
                 <h2 class="font-bold text-3xl my-5!">Frequently Asked Questions</h2>
-                <p>Answers to common Questions about my work.</p>
+                <p class="md:text-lg">Answers to common Questions about my work.</p>
             </div>
             <div class="space-y-5!">
-                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-5!">
+                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-3! md:p-5!">
                     <summary class="flex justify-between">
-                        <h2 class="text-2xl font-bold">What kind of projects do you work on?</h2>
+                        <h2 class="text-lg md:text-2xl font-bold">What kind of projects do you work on?</h2>
                         <i class="fa fa-solid fa-plus"></i>
                     </summary>
                     <p class="mt-5!">I build responsive, user-friendly websites and web applications.</p>
                 </details>
-                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-5!">
+                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-3! md:p-5!">
                     <summary class="flex justify-between">
-                        <h2 class="text-2xl font-bold">Do you take on freelance or full-time work?</h2>
+                        <h2 class="text-lg md:text-2xl font-bold">Do you take on freelance or full-time work?</h2>
                         <i class="fa fa-solid fa-plus"></i>
                     </summary>
                     <p class="mt-5!">Yes. I'm available for freelance projects, interships, and full-time opportunities.</p>
                 </details>
-                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-5!">
+                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-3! md:p-5!">
                     <summary class="flex justify-between">
-                        <h2 class="text-2xl font-bold">How do you approach new projects</h2>
+                        <h2 class="text-lg md:text-2xl font-bold">How do you approach new projects</h2>
                         <i class="fa fa-solid fa-plus"></i>
                     </summary>
                     <p class="mt-5!">I start by understanding your goals and requirements, then plan the project, design and interface.</p>
                 </details>
-                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-5!">
+                <details class=" bg-linear-180  from-blue-700  to-blue-950 rounded-lg border-2 border-blue-500 rounded-3xl p-3! md:p-5!">
                     <summary class="flex justify-between">
-                        <h2 class="text-2xl font-bold">What's your typical project timeline</h2>
+                        <h2 class="text-lg md:text-2xl font-bold">What's your typical project timeline</h2>
                         <i class="fa fa-solid fa-plus"></i>
                     </summary>
                     <p class="mt-5!">Project timeline depends on the scope and complexity</p>
                 </details>
-                <details class=" bg-linear-180  from-blue-700  to-blue-950  rounded-lg border-2 border-blue-500 rounded-3xl p-5!">
+                <details class=" bg-linear-180  from-blue-700  to-blue-950  rounded-lg border-2 border-blue-500 rounded-3xl p-3! md:p-5!">
                     <summary class="flex justify-between">
-                        <h2 class="text-2xl font-bold">How can i get started</h2>
+                        <h2 class="text-lg md:text-2xl font-bold">How can i get started</h2>
                         <i class="fa fa-solid fa-plus"></i>
                     </summary>
                     <p class="mt-5!">Simply send me a message through the contact from or email me with your project idea.</p>
@@ -191,9 +212,9 @@
         </section>
          <!-- Vision Section -->
         <section>
-            <div class="w-full mx-auto bg-linear-90  from-blue-700 to-blue-950 rounded-lg h-auto md:h-100 p-10! overflow-hidden">
+            <div class="w-full mx-auto bg-linear-90  from-blue-700 to-blue-950 rounded-lg h-auto md:h-100 p-5! md:p-10! overflow-hidden">
                 <div class="w-full md:w-160 space-y-5! flex flex-col justify-center items-start h-full animate__animated animate__fadeInLeft">
-                <h1 class="text-4xl font-bold">Your vision,my expertise. Let's create something <span class="text-blue-950">exceptional.</span></h1>
+                <h1 class="text-2xl md:text-4xl font-bold">Your vision,my expertise. Let's create something <span class="text-blue-950">exceptional.</span></h1>
                 <p>Ready to start? Schedule a consultation and let's <br class="hidden md:block"> shape your next big project</p>
                 <button class="px-10! py-3! bg-cyan-500 text-white font-semibold rounded-full border-2 border-white cursor-pointer">Book a call</button>
             </div>
@@ -201,7 +222,7 @@
         </section>
     </main>
     
-    <footer class="p-5! md:p-10! bg-linear-180  from-black via-blue-700 to-blue-950 mt-20!">
+    <footer class="footer-color p-5! md:p-10! bg-linear-180 from-[rgb(0_0_30)] via-blue-700 to-blue-950 mt-20!">
       <div class="text-center py-10!">
         <h1 class="uppercase text-5xl md:text-8xl font-bold">Collins</h1>
       </div>
@@ -230,6 +251,19 @@
         <p>Privacy | Terms of Service | Cookies | License</p>   
       </div>
     </footer>
+
+    <script>
+function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
 </body>
 
 </html>

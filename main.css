@@ -9,7 +9,7 @@
 
 
 body{
-    background: black;
+    background: rgb(0, 0, 30);
     color: white;
     font-family: Arial, sans-serif;
     /* background-color: rgb(22, 22, 22); */
@@ -67,6 +67,10 @@ li a{
     color: white;
     font-weight: bold;
 }
+.buttons{
+    display: flex;
+    gap: 20px;
+}
 .button1{
     padding: 10px 15px;
     border: none;
@@ -94,19 +98,20 @@ section{
 }
 
 .content{
-    width: 450px;
+    width: auto;
 }
 .content h1{
-    font-size: 30px;
+    font-size: 50px;
     opacity: 0.8;
     color: gray;
 }
 .content h2{
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     margin: 15px 0;
 }
 .content p{
+    font-size: 20px;
     color: gray;
     margin: 20px 0;
     width: 80%;
@@ -120,14 +125,14 @@ section{
     position: relative;
 }
 .picture img{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
 }
 .card{
     position: absolute;
     width: 150px;
-    padding: 20px;
+    padding: 10px;
     border: solid 1px rgba(0, 0, 255, 0.53);
     border-radius: 20px;
     /* background-image: url("../image/4509.png"); */
@@ -137,19 +142,19 @@ section{
 }
 .card1{
     top: 40px;
-    left: 0px;
+    left: 50px;
 }
 .card2{
     top: 10px;
-    right: 0px;
+    right: 50px;
 }
 .card3{
     bottom: 40px;
-    left: 0px;
+    left: 30px;
 }
 .card4{
     bottom: 0px;
-    right: 0px;
+    right: 50px;
 }
 
 
@@ -221,7 +226,7 @@ section{
     align-items: center;
 }
 .btn{
-   margin-left: 80px;
+   margin-left: 100px;
    margin-top: 30px;
    padding: 10px 15px;
    background-color: cyan;
@@ -269,6 +274,8 @@ section{
 .middle-right-container h2{
     padding-top: 40px;
     padding-left: 20px;
+    font-size: x-large;
+    font-weight: bold;
 
 }
 .logo{
@@ -294,6 +301,8 @@ section{
 .bottom-right-container h2{
    padding-top: 20px;
    padding-left: 20px;
+   font-weight: bold;
+   font-size: x-large;
 }
 
 .list{
@@ -342,6 +351,10 @@ section{
     background-repeat: no-repeat;
 }
 
+.mobile-menu {
+    display: none;
+}
+
  @media screen and (max-width: 768px) {
 
     header{
@@ -351,18 +364,18 @@ section{
     }
 
     .section1{
-        background-image: url("./image/112722.jpg");
+        /* background-image: url("./image/112722.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-        color: black;
+        background-repeat: no-repeat; */
+        color: white;
     }
     .section1 h1{
-        color: black;
+        color: rgb(195, 195, 195);
         font-weight: bold;
     }
     .section1 p{
-        color: black;
+        color: rgb(195, 195, 195);
         font-weight: bold;
     }
 
@@ -386,9 +399,56 @@ section{
     }
 
     .nav ul {
-        gap: 15px;
-        display: none;
-    }
+    gap: 15px;
+    display: none;
+}
+
+
+/* MOBILE HAMBURGER MENU */
+.mobile-menu {
+    display: block;
+    position: relative;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 180px;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+
+/* Hide Book a Call on phone */
+.desktop-button {
+    display: none;
+}
+
     .nav ul li a {
         font-size: 11px;
     }
@@ -533,5 +593,13 @@ section{
         padding: 15px;
         margin: 5px 10px;
         font-size: 14px;
+    }
+
+    .last-button {
+        width: 200px;
+    }
+
+    .footer-color{
+        background: linear-gradient(180deg, rgb(0, 0, 30), #1d4ed8, #172554);
     }
 }
